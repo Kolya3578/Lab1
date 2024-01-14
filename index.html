@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <title>Starbuzz Bean Machine</title>
+         <link type="text/css" rel="stylesheet" href="css/style.css">
+      </head>
+   <body>
+      <header>
+         <h1>Starbuzz Bean Machine</h1>
+         <h2>Заповніть наступну форму та натисніть кнопку "Замовити зараз",
+            зробити замовлення</h2>
+      </header>
+      <section>
+         <form action="http://starbuzzcoffee.com/processorder.php" method="get">
+            <div class="tablerow">
+               <p>
+                  Виберіть каву:
+                  <select name="beans">
+                     <option value="Суміш">Домашня суміш</option>
+                     <option value="Болівія">Болівія</option>
+                     <option value="Гватемала">Гватемала</option>
+                     <option value="Кенія">Кенія</option>
+                  </select>
+               </p>
+               <div class="tablerow">
+                  <p>
+                     Персонажі:
+                     <select name="characters" multiple="multiple">
+                        <option value="Баккару">Баккар Балай</option>
+                        <option value="Томми">Чудовий Томмі</option>
+                        <option value="Пенни">Пенні прибути</option>
+                        <option value="Джерси">Нью Джерсі</option>
+                        <option value="Джон">джонПаркер</option>
+                     </select>
+                     <br>
+                     <input type="text" placeholder="Buckaroo Banzai" required><br>
+                     <input type="text" placeholder="Tommy" required><br>
+                     <input type="text" placeholder="Penny Priddy" required><br>
+                     <input type="text" placeholder="New-Jersy" required><br>
+                     <input type="text" placeholder="John Parker" required><br>
+               </div>
+            </div>
+            <div class="tablerow">
+               <p>Тип:</p>
+               <p>
+                  <input type="radio" id="whole_beantype" name="beantype" value="зерна" id="hot">Кава в зернах
+                  <label for="whole_beantype"></label>
+                  <input type="radio" id="ground_beantype" name="beantype" value="мелений" id="not" checked>Мелену каву
+                  <label for="ground_beantype"></label>
+               </p>
+            </div>
+            <div class="tablerow">
+               <label for="bags">Кількість мішків:</label>
+               <input type="number" name="bags" min="1" max="10">
+            </div>
+            <div class="tablerow label">
+               <p> Бути доставленим у вказану дату: </p>
+               <p> <input type="date" name="date"></p>
+            </div>
+            <div class="tablerow">
+               <p> Додаткові послуги:</p>
+               <p>
+                  <input type="checkbox" name="extras[]" value="подарункова упаковка">Подарунок
+                  пакет<br>
+                  <input type="checkbox" name="extras[]" value="каталог" checked="checked">Доставка
+                  каталог разом із замовленням
+               <fieldset>
+                  <legend>Приправи</legend>
+                  <input type="checkbox" name="spice" value="сіль">
+                  Сіль <br>
+                  <input type="checkbox" name="spice" value="перець">
+                  Перець <br>
+                  <input type="checkbox" name="spice" value="часник">
+                  Часник
+               </fieldset>
+               </p>
+            </div>
+            <p>Відвантажувати: </p>
+            <p class="tablerow">
+               <label for="name">Назва:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Пароль:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Адрес:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Місто:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Країна:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Поштовий індекс:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Телефон:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p class="tablerow">
+               <label for="name">Файл:</label> <br>
+               <input type="text" id="name">
+            </p>
+            <p>Коментарі клієнтів:<br>
+               <textarea name="comments" placeholder="Введіть щось" rows="10" cols="48"></textarea><br>
+            </p>
+            </div>
+            <div class="tablerow">
+               <p>
+                  <input type="submit" value="Замовити зараз">
+               </p>
+            </div>
+         </form>
+      </section>
+      <footer class="footer">2023</footer>
+   </body>
+</html>
